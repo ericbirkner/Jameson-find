@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' data: gap: 'unsafe-eval'; style-src * 'self' 'unsafe-inline'; connect-src * ; script-src * 'self' 'unsafe-inline'; media-src *">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Tiempos</title>
+</head>
+
+<body onLoad="inicio()" class="setup">
+   	<a href="index.html" class="volver">&lt; Inicio</a>
+   
+    <h1>Configuración</h1>
+    <!--popup edición-->
+    
+	
+    <div class="box">
+		<form id="form">
+		<table border="0" style="border: 0;" >
+			<tr>
+				<td>Memoriza</td>
+				<td><input type="text" id="memoriza_set" placeholder="Ingresa segundos"></td>
+			</tr>
+			<tr>
+				<td>5 Diferencias</td>
+				<td><input type="text" id="diferencias_set" placeholder="Ingresa segundos"></td>
+			</tr>
+			<tr>
+				<td>Arma tu trago</td>
+				<td><input type="text" id="puzzle_set" placeholder="Ingresa segundos"></td>
+			</tr>
+		</table>		
+        
+        
+        
+		</form>	
+    </div>
+    
+    <div style="text-align: center">
+		<button onclick="guardar()" id="fixed">Guardar</button>
+    </div>
+	
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+		
+		function inicio(){
+			
+			if(typeof(Storage) !== "undefined") {
+				document.getElementById("memoriza_set").value = localStorage.memoriza;
+				document.getElementById("diferencias_set").value = localStorage.diferencias;
+				document.getElementById("puzzle_set").value = localStorage.puzzle;
+				
+			} else {
+				console.log("Sorry, your browser does not support web storage...");
+			}	
+		}
+		
+		function guardar() {					
+			localStorage.memoriza = document.getElementById("memoriza_set").value;
+			localStorage.diferencias = document.getElementById("diferencias_set").value;
+			localStorage.puzzle = document.getElementById("puzzle_set").value;
+			alert('¡Guardado con éxito!');
+		}
+	</script>
+
+  </body>
+
+</html>
