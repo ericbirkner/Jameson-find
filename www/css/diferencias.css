@@ -63,10 +63,10 @@
 }
 
 #memory--settings-reset {
-  background-color: rgba(255,255,255,0.9);
-  color: #001a3b;
+  background-color: #294836;
+  color: #efdfa4;
   font-size: 3em;
-  border: 2px solid #001a3b;
+  border: 2px solid #efdfa4;
   border-radius: 15px;
 	padding: 5px 30px;
 }

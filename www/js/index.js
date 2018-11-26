@@ -84,15 +84,6 @@ function onDeviceReady() {
 		if (!localStorage.memoriza) {
 			localStorage.memoriza = 30;
 		}
-
-		if (!localStorage.diferencias) {
-			localStorage.diferencias = 30;
-		}
-
-		if (!localStorage.puzzle) {
-			localStorage.puzzle = 30;
-		} 
-
 	} else {
 		console.log("no le lleva web storage...");
 	}
@@ -168,7 +159,7 @@ function goRegistro() {
 	tx.executeSql(sql);	
 		
 	
-	window.location= 'menu.html';	
+	window.location= 'juego.html';	
 	
 	}, errorCB);	
 	

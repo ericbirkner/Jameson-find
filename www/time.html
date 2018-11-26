@@ -25,17 +25,11 @@
 		<form id="form">
 		<table border="0" style="border: 0;" >
 			<tr>
-				<td>Memoriza</td>
+				<td>Tiempo</td>
 				<td><input type="text" id="memoriza_set" placeholder="Ingresa segundos"></td>
 			</tr>
-			<tr>
-				<td>5 Diferencias</td>
-				<td><input type="text" id="diferencias_set" placeholder="Ingresa segundos"></td>
-			</tr>
-			<tr>
-				<td>Arma tu trago</td>
-				<td><input type="text" id="puzzle_set" placeholder="Ingresa segundos"></td>
-			</tr>
+			
+			
 		</table>		
         
         
@@ -55,8 +49,7 @@
 			
 			if(typeof(Storage) !== "undefined") {
 				document.getElementById("memoriza_set").value = localStorage.memoriza;
-				document.getElementById("diferencias_set").value = localStorage.diferencias;
-				document.getElementById("puzzle_set").value = localStorage.puzzle;
+				
 				
 			} else {
 				console.log("Sorry, your browser does not support web storage...");
@@ -65,8 +58,7 @@
 		
 		function guardar() {					
 			localStorage.memoriza = document.getElementById("memoriza_set").value;
-			localStorage.diferencias = document.getElementById("diferencias_set").value;
-			localStorage.puzzle = document.getElementById("puzzle_set").value;
+			
 			alert('¡Guardado con éxito!');
 		}
 	</script>
