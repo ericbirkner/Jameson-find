@@ -25,19 +25,19 @@ var foto1 = fotos[elegido-1];
 $(function() {
 	
 	if(foto1=="1"){
-		$('#diferencias .wrapper .img .dot').eq(0).css({'right': '137px', 'top': '88px'});
-		$('#diferencias .wrapper .img .dot').eq(1).css({'left': '182px', 'top': '70px'});
-		$('#diferencias .wrapper .img .dot').eq(2).css({'right': '247px', 'top': '249px'});
-		$('#diferencias .wrapper .img .dot').eq(3).css({'left': '181px', 'top': '137px'});
-		$('#diferencias .wrapper .img .dot').eq(4).css({'right': '52px', 'top': '60px'});	
+		$('#diferencias .wrapper .img .dot').eq(0).css({right: '78px', bottom: '147px'});
+		$('#diferencias .wrapper .img .dot').eq(1).css({'left': '495px', 'top': '57px'});
+		$('#diferencias .wrapper .img .dot').eq(2).css({'left': '483px', 'top': '236px'});
+		$('#diferencias .wrapper .img .dot').eq(3).css({'left': '199px', 'bottom': '86px'});
+		$('#diferencias .wrapper .img .dot').eq(4).css({'right': '259px', 'top': '25px'});	
 	}
-	
+
 	if(foto1=="2"){
-		$('#diferencias .wrapper .img .dot').eq(0).css({'right': '58px', 'top': '110px'});
-		$('#diferencias .wrapper .img .dot').eq(1).css({'right': '214px', 'top': '20px'});
-		$('#diferencias .wrapper .img .dot').eq(2).css({'right': '215px', 'top': '277px'});
-		$('#diferencias .wrapper .img .dot').eq(3).css({'left': '66px', 'top': '196px'});
-		$('#diferencias .wrapper .img .dot').eq(4).css({'right': '52px', 'top': '18px'});	
+		$('#diferencias .wrapper .img .dot').eq(0).css({'left': '270px', 'top': '48px'});
+		$('#diferencias .wrapper .img .dot').eq(1).css({'right': '331px', 'top': '50px'});
+		$('#diferencias .wrapper .img .dot').eq(2).css({'right': '445px', 'top': '277px'});
+		$('#diferencias .wrapper .img .dot').eq(3).css({'left': '120px', 'top': '250px'});
+		$('#diferencias .wrapper .img .dot').eq(4).css({'left': '352px', 'bottom': '209px'});	
 	}
 	
 	$('#diferencias .wrapper .img').css("background-image", "url('img/juego/"+foto1+".png')");

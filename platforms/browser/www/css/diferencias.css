@@ -18,14 +18,13 @@
 
 #diferencias .wrapper .img .dot{
 	position: absolute;
-	width: 20px;
-	height: 20px;
-	background-color: greenyellow;
-	border-radius: 10px;
-	border: 1px solid white;
+	width: 60px;
+	height: 60px;
+	background-color: lawngreen;
+	border-radius: 30px;
+	border: 1px solid #efdfa4;
 	z-index: 4;
 	opacity: 1;
-	transform: scale(1.1,1.1);
 }
 
 .modal {
@@ -87,12 +86,12 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
-  color: #001a3b;	
   width: 350px;
   height: 200px;
-  background: #ffffff;
+  background-color: #294836;
   border-radius: 175px / 100px;
   position: relative;	
+  border: 2px solid #efdfa4;
 	
 }
 #memory--end-game-modal h2,
@@ -114,19 +113,20 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-	color: #001a3b;
-	font-weight: bold;
+	color: #efdfa4;
+	font-family: 'Conv_jj-rg', Sans-Serif;
     transform: translate(-50%, -50%); 
 }
 
 
 #cronometro{
 	font-size: 3em;
-	color: #fff;
+	color: #efdfa4;
 	left: 20px;
 	top: 2px;
 	position: absolute;
 	z-index: 10;
+	font-family: 'Conv_jj-rg', Sans-Serif;
 	display: none;
 }
 
