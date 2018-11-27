@@ -23,31 +23,31 @@ input[type="date"].full:before {
 input::-webkit-datetime-edit{ color: transparent; }
 
 html{
-	background: url(../../img/fondo.png) no-repeat center center fixed; 
+  background: url(../img/fondo.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+html.premio{
+	background-image: url(../img/fondo_premio.png); 
+}
+
 body{
 	margin: 0;
 	padding: 0;
-	font-family:'Conv_futura medium bt',Sans-Serif;
+	font-family: 'Conv_jj-lt', Sans-Serif;
 	width: 100%;
-	height: 100%;
-	
+	height: 100%;	
 	color: #efdfa4;
 	overflow: hidden;
 	
 }
 
 strong, h1, h2, h3, h4, h5{
-	/*
-	font-family: 'Conv_Futura Bold font',Sans-Serif;
-	letter-spacing: 2px;
-	*/
-	font-weight: bold;
+	font-family: 'Conv_jj-rg';
+	font-weight: normal;
 }
 
 a.volver{
@@ -468,7 +468,8 @@ body.setup #qrpopup input[type=text]{
 }
 
 span#premio{
-	font-size: 2em;
+	font-size: 1.8em;
+	line-height: 1em;
 }
 
 
