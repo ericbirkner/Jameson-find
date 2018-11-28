@@ -9,7 +9,7 @@
 #diferencias .wrapper .img{
 	width: 100%;
 	height: 576px;
-	margin-top: 90px;
+	margin-top: 65px;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center top;
@@ -96,7 +96,7 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 35px;
   width: 350px;
   height: 200px;
   background-color: #294836;
@@ -131,7 +131,7 @@
 
 
 #cronometro{
-	font-size: 3em;
+	font-size: 50px;
 	color: #efdfa4;
 	left: 20px;
 	top: 2px;
