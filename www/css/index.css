@@ -143,6 +143,10 @@ a.time{
 }
 
 
+#formulario h1{
+	font-size: 1.4em;
+}
+
 #formulario .campos{
 	width: 40%;
 	height: 90%;
@@ -161,7 +165,7 @@ a.time{
 #formulario .campos .input{
 	color: #efdfa4;
 	background: #294836;
-	font-size: 1.4em;
+	font-size: 1em;
 	display: block;
 	width: 90%;
 	padding: 15px 5%;
@@ -175,7 +179,7 @@ a.time{
 #formulario .campos select.fecha{
 	color: #efdfa4;
 	background: #294836;
-	font-size: 1.4em;
+	font-size: 1em;
 	display:inline-block;
 	width: 32%;
 	padding: 15px 5%;
@@ -209,7 +213,7 @@ a.time{
 .container {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding-right: 25px;
     margin-bottom: 12px;
     cursor: pointer;
     
@@ -236,6 +240,7 @@ a.time{
     width: 25px;
     background-color: #294836;
 	border: 1px solid #efdfa4;
+	border-radius: 5px;
 }
 
 /* On mouse-over, add a grey background color */
