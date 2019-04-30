@@ -199,13 +199,14 @@ a.time{
 
 #formulario .info{
 	text-align: right;
+	text-transform: uppercase;
+	font-size: 13px;
 }
 
 #formulario .campos .enviar{
 	color: #efdfa4;
 	background: #294836;
 	font-size: 1.4em;
-	border: none;
 	border-radius: 10px;
 	padding: 10px 5%;
 	border: 1px solid #efdfa4;
@@ -485,4 +486,24 @@ span#premio{
   left: 50%;
   margin: 0 0 0 -225px;
   bottom: 20px;
+}
+
+.legal{
+	position: absolute;
+	width: 90%;
+	bottom: 5px;
+	left: 5%;
+	z-index: 2;
+	font-size: 13px;
+	text-align: justify;
+}
+
+.legal.center{
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 15px;
+}
+
+.legal a{
+  color: #efdfa4;
 }

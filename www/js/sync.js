@@ -22,11 +22,22 @@ function lista_datos(tx, results) {
 		var obj = {
             firstName 		: results.rows.item(i).firstName,
             lastName 		: results.rows.item(i).lastName,
-            hash 			: '123456',
             email 			: results.rows.item(i).email,
-            birthday 		: results.rows.item(i).birthday,
-            identifyNumber 	: results.rows.item(i).rut,
-			countryCode		: "cl",
+            birthday		: results.rows.item(i).birthday,
+			gender : "M",
+            countryCode		: "cl",
+			languageCode : "es",
+			city : "santiago",
+			createdDate: '2019-10-30T08:49:00Z',
+			updatedDate: '2019-10-30T08:49:00Z',
+			activityID: 'Jameson_find_2018',
+			activityRecordSource : "find",
+			activityType: "event",
+			activityName: "Jameson_find_2018",
+			optIn_Chivas: "True",
+			optInDate_Chivas: "2019-10-30T08:49:00Z",
+			identifyNumber 	: results.rows.item(i).rut,
+			hash : "mnsdjidshjdsj"
         }
 		
 		var str = JSON.stringify(obj);
@@ -47,8 +58,8 @@ function lista_datos(tx, results) {
         console.log(obj);
         $.ajax({
             type: "POST",
-            url: "https://api.pernod-ricard.io/pr-latam/v1/consumers/",
-            //url : 'http://horus.dev.konabackend.com/',
+            //url: "https://api.pernod-ricard.io/pr-latam/v1/consumers/",
+            url : 'https://api.pernod-ricard.io/pr-latam/v1/interactions/simple/564031cbd4c6f405581cbd26',
 			data: JSON.stringify(obj),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -58,7 +69,7 @@ function lista_datos(tx, results) {
    			},
             success: function(data){
                 //alert('Success');
-				console.log("Gracias por registrarte, ya puedes ingresar a Ballantine's Records");
+				console.log(data);
 				exito++;  
 			},
 			failure: function(errMsg) {
@@ -76,7 +87,7 @@ function lista_datos(tx, results) {
 			},
             error: function(errMsg) { 		
 	            if(errMsg.responseText=="{\"message\":\"hash invalid, the minimum length is 6\"}"){
-		            mensaje = "La contraseÃ±a debe tener al menos 6 caracteres.";
+		            mensaje = "La contraseña debe tener al menos 6 caracteres.";
 	            }else if("{\"message\":\"The consumer already exists in Touchpoint\",\"code\":26}"){
 		            mensaje = "Este correo ya se encuentra registrado.";
 	            }else{
