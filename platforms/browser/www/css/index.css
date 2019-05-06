@@ -156,6 +156,7 @@ a.time{
 	top: 5%;
 	position: absolute;
 	animation-delay:1s;
+	z-index: 4;
 }
 
 
@@ -506,4 +507,10 @@ span#premio{
 
 .legal a{
   color: #efdfa4;
+}
+
+@media (max-height: 550px) {
+  .legal {
+    display: none;
+  }
 }
